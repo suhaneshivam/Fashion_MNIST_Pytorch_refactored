@@ -14,7 +14,7 @@ Fourth layer is also a fully connected layer which accepts a 120 dim (o/p from t
 Final layer is the 1x10 dim output layer corresponding to 10 categories.
 
 ## About Coding style
-The code has been refactored into multiple class in order to add the layers of abstraction and readibility. The run_builder class especially is created to track epoch loss,epoch
+The code has been refactored into multiple class in order to add the layers of abstraction and readibility. The RunManager class especially is created to track epoch loss,epoch
 count and total no of correct prediction. The code is designed in such a way that it can accept different set og hyperparameters such as lr (leraning rate) ,batch_size and shuffle.The code also also saves the result of every run(cycles with different hyperparameters) in to local directory in .csv and ,json format. Additionally code also
 add loss ,weights,gradient etc to tensorboard for sake of better visualisation.
 
